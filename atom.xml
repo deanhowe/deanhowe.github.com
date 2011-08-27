@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Dean Howe</title>
+ <link href="http://deanhowe.github.com/atom.xml" rel="self"/>
+ <link href="http://deanhowe.github.com/"/>
+ <updated>2011-08-31T00:39:40+01:00</updated>
+ <id>http://deanhowe.github.com/</id>
+ <author>
+   <name>Dean Howe</name>
+   <email>de@n-howe.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>We Welcome Our Electronic Overlords</title>
+   <link href="http://deanhowe.github.com/News/2011/08/22/we-welcome-our-electronic-overlords.html"/>
+   <updated>2011-08-22T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/News/2011/08/22/we-welcome-our-electronic-overlords</id>
+   <content type="html">&lt;div class=&quot;notification&quot; style=&quot;float:right; width:10em; margin-left:2em; text-align:right;&quot;&gt;
+&lt;h3&gt;&amp;ldquo;&lt;/h3&gt;&lt;strong&gt;We are running through the United States with dynamite and rock saws so an algorithm can close the deal three microseconds faster, all for a communications system that no humans will ever see,&lt;/strong&gt;&lt;h3&gt;&amp;rdquo;&lt;/h3&gt;
+said Kevin Slavin, Algorithm expert.
+&lt;/div&gt;
+
+
+&lt;p&gt;I Read a BBC article today - &lt;a href=&quot;http://www.bbc.co.uk/news/technology-14306146&quot;&gt;When algorithms control the world&lt;/a&gt;. It caught my eye, probably because I miss my fibre connection so much.&lt;/p&gt;
+
+&lt;p&gt;I never knew it took more than 60milliseconds to get a trade from the UK to the States, but equally; it will be impressive when it's less!&lt;/p&gt;
+
+&lt;p&gt;It was also the quote on the right that interested me. Who is &lt;a href=&quot;http://www.google.co.uk/search?hl=en&amp;amp;rls=en&amp;amp;q=Kevin+Slavin+Algorithm+expert?&quot;&gt;Kevin Slavin&lt;/a&gt; and what makes someone an algorithm expert? And why is this term thrown around so much? Is it just to make computer code sound more sexy? Is it only an algorithm when it's a secret? When it's short?&lt;/p&gt;
+
+&lt;p&gt;Just wanted to jot something down - as a weblog gitHubPages is cool, but is it a &lt;em&gt;blog&lt;/em&gt; if people can't leave feedback/comments easily? Do I need to &lt;a href=&quot;http://disqus.com/welcome/&quot; title=&quot;Disqus&quot;&gt;go here&lt;/a&gt; and sign-up for &lt;a href=&quot;http://disqus.com/welcome/&quot; title=&quot;Disqus&quot;&gt;Disqus&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>UTF-8</title>
+   <link href="http://deanhowe.github.com/Geekery/GitHub/2011/08/20/UTF-8.html"/>
+   <updated>2011-08-20T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Geekery/GitHub/2011/08/20/UTF-8</id>
+   <content type="html">&lt;p&gt;Re-capping my knowledge on using UTF-8 in the web stack, with thanks to  &lt;a href=&quot;http://rentzsch.tumblr.com/post/9133498042/howto-use-utf-8-throughout-your-web-stack&quot; title=&quot;HOWTO Use UTF-8 Throughout Your Web Stack&quot;&gt;Jonathan 'Wolf' Rentzsch&lt;/a&gt; via  &lt;a href=&quot;http://daringfireball.net/&quot; title=&quot;DaringFireball&quot;&gt;John Gruber&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;“Iñtërnâtiônàlizætiøn”&lt;/h3&gt;
+
+&lt;p&gt;The string above is a &lt;em&gt;hard-core&lt;/em&gt; word to push through systems.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;can’t be represented in Latin-1&lt;/li&gt;
+&lt;li&gt;will catch all sorts of hidden failure scenarios.&lt;/li&gt;
+&lt;li&gt;when viewing raw hex, there’s no place for encoding bugs to hide.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;For the record, &lt;strong&gt;“Iñtërnâtiônàlizætiøn”&lt;/strong&gt; looks like
+&lt;code&gt;E2 80 9C 49 C3 B1 74 C3 AB 72 6E C3 A2 74 69 C3 B4 6E C3 A0 6C 69 7A C3 A6 74 69 C3 B8 6E E2 80 9D&lt;/code&gt; in UTF-8 in hex.&lt;/p&gt;
+
+&lt;p&gt;Wolf provides a few links in the article, mainly to software, but the link to &lt;a href=&quot;(http://nevali.net&quot;&gt;Mo McRoberts&lt;/a&gt; - &lt;a href=&quot;http://nevali.net/post/122598711/when-mysql-encodings-go-bad&quot;&gt;when MySQL encodings go bad&lt;/a&gt; is not only a good read about MySQL's default settings generally, but also gives these two UTF-8 symbols “優雅”. What they are I don't know - fingers crossed not anything offensive.&lt;/p&gt;
+
+&lt;h3&gt;MySQL default Latin-1 &lt;em&gt;will&lt;/em&gt; store UTF-8 ☚ that's the problem&lt;/h3&gt;
+
+&lt;p&gt;UTF-8 stores a whole heap of stuff actually, including all the building block I used as a kid back in the early 80's to make basic animation on the C64. Combined with the new font support in CSS3, I think it might me a good time to work on the project I had planned for my dissertation. The basic premise was this - &quot;You can not only change the look and feel of a website with a typeface, but also it's content and structure.&quot; Imagine if all the images for a site were stored in a handcrafted site specific font, with out the font you don't see the desired content.&lt;/p&gt;
+
+&lt;p&gt;I'll have to add to this blog post later, have other things to attend to really, I'm sure gitHub Pages uses UTF-8... ☺&lt;/p&gt;
+
+&lt;h1&gt; &lt;/h1&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tia Howe - 8lb 4oz</title>
+   <link href="http://deanhowe.github.com/Personal/2011/08/18/Tia-Howe-github.html"/>
+   <updated>2011-08-18T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Personal/2011/08/18/Tia-Howe-github</id>
+   <content type="html">&lt;p&gt;My brother welcomed a new member of his family to the world today - Tia Howe , 8lb 4oz.&lt;/p&gt;
+
+&lt;h2&gt;Helloo Tia x&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Lost Mains Power Last Night</title>
+   <link href="http://deanhowe.github.com/Personal/Work-Related/2011/08/16/lost-mains-power.html"/>
+   <updated>2011-08-16T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Personal/Work-Related/2011/08/16/lost-mains-power</id>
+   <content type="html">&lt;p&gt;So, I went down stairs to make the girlfriend dinner (she works heavy shifts) and found out something new about the house.
+If you have the oven, tumble dryer, kettle, TV and computers on all at once the main switch trips, awesome!&lt;/p&gt;
+
+&lt;p&gt;After fiddling around, working out what order I could do things in, I finished off dinner. After the meal I walked upstairs to find a silence and blank screens.
+That resulted in me ignoring the issue, reading some more of my book (The Time Travellers Wife) and having an early night.&lt;/p&gt;
+
+&lt;p&gt;Early nights only ever lead to one thing, early mornings! So I woke up and got on with work. Work by the way is usually focused around &lt;a href=&quot;https://www.skipuk.co.uk&quot; title=&quot;SkipUK.co.uk&quot;&gt;SkipUK&lt;/a&gt;.
+Today I was integrating &lt;a href=&quot;http://tradedoubler.com/&quot; title=&quot;TradeDoubler&quot;&gt;TradeDoubler&lt;/a&gt; Affiliate Marketing, great fun.&lt;/p&gt;
+
+&lt;p&gt;Is this blogging for the sake of blogging? Yes. Oh and by the way, whilst writting this - got some great news - The girlfriend no longer has to work shifts forever, she landed a secondment and is working a 9-5 for 12months, finally a social life!&lt;/p&gt;
+
+&lt;p&gt;Anyway, back to the grindstone, lunch break over.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How I lost over $1,000,000 in a day whilst at a start-up.</title>
+   <link href="http://deanhowe.github.com/Personal/2011/08/15/how-i-lost-a-statup-a-million.html"/>
+   <updated>2011-08-15T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Personal/2011/08/15/how-i-lost-a-statup-a-million</id>
+   <content type="html">&lt;p&gt;Unfortunately &lt;a href=&quot;http://anonproject.org&quot;&gt;AnonProject&lt;/a&gt; was not the start-up. Even more unfortunate is that the website is currently down, due to legal reasons.&lt;/p&gt;
+
+&lt;p&gt;I'll tell the story another day, I promise. Although that might also lead to a legal issue...&lt;/p&gt;
+
+&lt;p&gt;Obviously I didn't &lt;em&gt;actually&lt;/em&gt; loose it, but I did prevent it from being aquired and lost my job over it, obviously.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GitHubPages Instructions</title>
+   <link href="http://deanhowe.github.com/Geekery/GitHub/2011/08/15/githubpages.html"/>
+   <updated>2011-08-15T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Geekery/GitHub/2011/08/15/githubpages</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://pages.github.com/&quot;&gt;RTFM!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setting up &lt;a href=&quot;username.github.com/repo-name&quot;&gt;username.github.com/repo-name&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Caution: make your working directory clean before you
+do this (either stash or commit), otherwise this will lose any changes
+you've made to your project since the last commit.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+cd /path/to/repo-name
+git symbolic-ref HEAD refs/heads/gh-pages
+rm .git/index
+git clean -fdx
+echo &quot;My GitHub Page&quot; &amp;amp;gt; index.html
+git add .
+git commit -a -m &quot;First pages commit&quot;
+git push origin gh-pages
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong style=&quot;margin-top:2.25em; color: #a00&quot;&gt;WARNING: All pages (even those created on private repos) will be publicly viewable&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;Setting up &lt;u&gt;username.github.com&lt;/u&gt; *&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;``
+Create a repo named deanhowe.github.com
+Push a&lt;/code&gt;master` branch to GitHub...
+````&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It may take up to 10 minutes to activate GitHub Pages for your account&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://drnicwilliams.com/2008/12/21/migrating-project-websites-to-github-pages-with-sake-tasks-new-websites-with-jekyll_generator&quot;&gt;
+jekyll_generator
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://haruska.com/2009/07/26/change-to-jekyll-and-github-pages/&quot;&gt;
+haruska
+&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I quickly peek at Textile</title>
+   <link href="http://deanhowe.github.com/Geekery/2011/08/15/enter-texttile.html"/>
+   <updated>2011-08-15T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Geekery/2011/08/15/enter-texttile</id>
+   <content type="html">&lt;p&gt;Paragraphs a&amp;#8217;la markdown&lt;/p&gt;
+&lt;p&gt;p(meta) Why have I never looked at Textile before?&lt;/p&gt;
+&lt;h2&gt;Header Tags &amp;#8211; Sans angle brackets, but with periods.&lt;/h2&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>I turn to GitHub as a possible publishing platform</title>
+   <link href="http://deanhowe.github.com/Geekery/2011/08/15/enter-github.html"/>
+   <updated>2011-08-15T00:00:00+01:00</updated>
+   <id>http://deanhowe.github.com/Geekery/2011/08/15/enter-github</id>
+   <content type="html">&lt;p&gt;I will blog, I &lt;em&gt;will&lt;/em&gt; blog, I will &lt;em&gt;blog&lt;/em&gt;...&lt;/p&gt;
+
+&lt;p&gt;I need a voice, I have remained silent for too long.&lt;/p&gt;
+
+&lt;p&gt;My current &lt;em&gt;blog&lt;/em&gt; &lt;a href=&quot;http://dea.n-howe.com/&quot; title=&quot;dea.n-howe.com&quot;&gt;dea.n-howe.com&lt;/a&gt; has had me tinkering and tweaking for ages, the last delay was due to wanting code syntax high-lighting - for blog posts I haven't even written!&lt;/p&gt;
+
+&lt;h1&gt;Things I need to look up....&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/github/gollum/&quot;&gt;Gollum&lt;/a&gt;: A simple, Git-powered wiki with a sweet API and local frontend.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/jekyll/&quot;&gt;Jekyll&lt;/a&gt;: A simple, blog aware, static site generator (used for this site).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/god/&quot;&gt;God&lt;/a&gt;: Ruby process monitoring framework with easy extensibility.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/grit/&quot;&gt;Grit&lt;/a&gt;: Object oriented Ruby bindings for Git (used by GitHub).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/ernie/&quot;&gt;Ernie&lt;/a&gt;: Ruby/Erlang Hybrid BERT-RPC server.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/proxymachine/&quot;&gt;ProxyMachine&lt;/a&gt;: Layer 7 routing proxy in Ruby with Event Machine.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/primer/&quot;&gt;Primer&lt;/a&gt;: JavaScript based Flash-like API layered on top of Canvas.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/chronic/&quot;&gt;Chronic&lt;/a&gt;: Ruby natural language date/time&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>eeci2009.com</title>
+   <link href="http://deanhowe.github.com/CodeIgniter/Geekery/2009/11/01/eeci2009.html"/>
+   <updated>2009-11-01T00:00:00+00:00</updated>
+   <id>http://deanhowe.github.com/CodeIgniter/Geekery/2009/11/01/eeci2009</id>
+   <content type="html">&lt;h2&gt;eeci2009.com&lt;/h2&gt;
+
+&lt;p&gt;What a weekend! I never realised coders could drink so much.&lt;/p&gt;
+
+&lt;p&gt;Great weekend, highlight has to be getting to know &lt;a href=&quot;http://www.myerman.com/&quot;&gt;Myerman&lt;/a&gt;, he really is an awesome guy. Hope, his wife is absolutely adorable too, it felt like meeting old friends.&lt;/p&gt;
+
+&lt;p&gt;Obviously &lt;a href=&quot;http://philsturgeon.co.uk/&quot;&gt;Phil Sturgeon&lt;/a&gt; and &lt;a href=&quot;http://jamieonsoftware.com/&quot;&gt;Jamie&lt;/a&gt;, well they both love code...&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
